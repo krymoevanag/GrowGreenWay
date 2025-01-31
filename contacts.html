@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GrowGreenWay</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #3b7a00;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.phone-link {
+    display: block;
+    color: white;
+    font-size: 16px;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.phone-link i {
+    margin-right: 5px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+/* Contact Section */
+.contact-container {
+    background: white;
+    padding: 40px;
+    margin: 40px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #3b7a00;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+button {
+    background: #3b7a00;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #2a5900;
+}
+
+/* Contact Info */
+.contact-info {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    font-size: 18px;
+}
+
+.contact-info i {
+    color: #3b7a00;
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+
+    .contact-info {
+        width: 80%;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Contact Us</h1>
+        <a href="tel:+254708873060" class="phone-link">
+            <i class="fas fa-phone"></i> +254 708 873 060
+        </a>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html" class="active">Contact</a></li>
+                <li><a href="learnMore.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="webname">
+        <h1>GrowGreenWay</h1>
+    </div>
+
+    <!-- Animated Section -->
+    <section class="reveal">
+        <h2>Let's Connect</h2>
+        <p>Have questions? Reach out and let's make farming more sustainable together!</p>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-container">
+        <h2>Get in Touch</h2>
+        <p>We’d love to hear from you! Fill in the form below, and we’ll get back to you as soon as possible.</p>
+
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Write your message..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info">
+        <h2>Other Ways to Reach Us</h2>
+        <p><i class="fas fa-envelope"></i> Email: <a
+                href="mailto:kirimievansgitonga@gmail.com">kirimievansgitonga@gmail.com</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> Location: Chuka, Kenya</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 GrowGreenWay. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

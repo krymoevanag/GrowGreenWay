@@ -1,0 +1,271 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color:green;
+    color: white;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 50px 0;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Image Slider */
+
+
+
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode header, .dark-mode footer {
+    background-color: #222;
+}
+
+.dark-mode button {
+    background-color: #444;
+}
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+/* Back-to-Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#back-to-top:hover {
+    background: #218838;
+}
+/* Sticky Navbar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: green;
+    z-index: 1000;
+    padding: 15px;
+}
+
+body {
+    padding-top: 60px; /* Adjust based on header height */
+}
+/* Loading Animation */
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff url('../images/loader.gif') no-repeat center;
+    z-index: 9999;
+}
+/* Hide Menu by Default */
+#mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+}
+
+#mobile-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#mobile-menu ul li {
+    text-align: center;
+    padding: 10px;
+}
+
+#mobile-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Show Hamburger Menu on Small Screens */
+@media (max-width: 768px) {
+    #menu-toggle {
+        display: block;
+    }
+}
+/* Hidden sections (default) */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* When in view */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+                /* HEADER CONTENT */
+                .headerContent {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 15px 20px;
+                }
+        
+                .headerContent h1 {
+                    margin: 0;
+                    font-size: 1.8rem;
+                    flex-grow: 1;
+                    text-align: left;
+                }
+        
+                .headerContent h3 {
+                    margin: 5px 0;
+                    font-size: 0.9rem;
+                    color: #f1f1f1;
+                }
+        
+                /* SIDEBAR */
+                .sidebar {
+                    height: 100%;
+                    width: 0;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background-color: #438106;
+                    overflow-x: hidden;
+                    padding-top: 60px;
+                    transition: 0.4s;
+                }
+        
+                .sidebar a {
+                    padding: 12px 20px;
+                    font-size: 20px;
+                    color: white;
+                    display: block;
+                    transition: 0.3s;
+                }
+        
+                .sidebar a:hover {
+                    background-color: #2e6800;
+                }
+        
+                .sidebar .closebtn {
+                    position: absolute;
+                    top: 10px;
+                    right: 20px;
+                    font-size: 25px;
+                    color: white;
+                    cursor: pointer;
+                }
+        
+                .openbtn {
+                    font-size: 20px;
+                    cursor: pointer;
+                    background-color: #111;
+                    color: white;
+                    padding: 10px 15px;
+                    border: none;
+                }
+        
+                .openbtn:hover {
+                    background-color: #444;
+                }
