@@ -11,3 +11,7 @@ GrowGreenWay promotes sustainable farming practices by offering resources and ti
 │   ├── script.js   (JavaScript functionality)
 │── /images         (Folder for images)
 │── /assets         (Optional: fonts, icons, etc.)
+
+deployed the website online via netlify web hosting app.
+
+ access the website via this link: https://growgreenwayafrica.netlify.app/home
